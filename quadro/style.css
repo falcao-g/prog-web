@@ -1,0 +1,9 @@
+div {
+    width: 90vw;
+    height: 90vh;
+    background-color: rgb(86, 26, 171);
+}
+
+div:hover {
+    background-color: rgb(201, 33, 176);
+}

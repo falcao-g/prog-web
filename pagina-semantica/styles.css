@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: clamp(1.5em, 2.5vw, 4em);
+}
+
+.falbot {
+    color: rgb(207, 161, 45);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #312450;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(77, 121, 202);
+    font-size: clamp(1em, 1.3vw, 2em);
+}
+
+#welcome {
+    background-color: #5E42A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#welcome h2 {
+    font-size: clamp(2em, 3.5vw, 4em);
+    color: rgb(107, 26, 69);
+}
+
+#welcome p {
+    font-size: clamp(1em, 1.5vw, 2em);
+}
+
+#about {
+    background-color: #B74E91;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#about h2 {
+    font-size: clamp(2em, 3vw, 4em);
+    color: rgb(34, 26, 107);
+}
+
+#about div {
+    display: flex;
+    gap: 40vw;
+}
+
+article::before {
+    content: "";
+    display: block;
+    border: 1px dashed goldenrod;
+    color: #333;
+}
+
+
+#about div article h3 {
+    font-size: clamp(1.5em, 2.2vw, 4em);
+    color: goldenrod;
+}
+
+#about div article p {
+    font-size: clamp(1em, 1.1vw, 2em);
+    max-width: 450px;
+}
+
+.contact {
+    background-color: #5E42A6;
+    display: flex;
+    gap: clamp(1em, 2vw, 3em);
+    padding: 2em;
+}
+
+.contact h2 {
+    font-size: clamp(2em, 0.5vw, 3em);
+    color: rosybrown;
+}
+
+.contact address {
+    display: flex;
+    width: 100vw;
+    gap: clamp(1em, 2vw, 3em);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+address p:nth-child(1),
+address p:nth-child(3) {
+    color: rosybrown;
+}
+
+footer {
+    background-color: #493381;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+footer::after {
+    content: "use o falbot! <3";
+    font-size: clamp(14px, 0.3vh, 1em);
+    color: #b11111;
+}
